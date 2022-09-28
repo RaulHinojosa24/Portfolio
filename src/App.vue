@@ -1,6 +1,7 @@
 <script setup>
 import NavBar from './components/NavBar.vue';
 import Welcome from './components/Welcome.vue';
+import AboutMe from './components/AboutMe.vue';
 </script>
 
 <template>
@@ -9,6 +10,7 @@ import Welcome from './components/Welcome.vue';
   </header>
   <main>
     <Welcome />
+    <AboutMe />
   </main>
 </template>
 

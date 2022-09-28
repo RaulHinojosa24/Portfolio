@@ -13,7 +13,7 @@ import Logo from "/logo.svg"
         </div>
       </div>
       <li class="nav-item"><a href="#welcome">Welcome</a></li>
-      <li class="nav-item"><a href="#">About Me</a></li>
+      <li class="nav-item"><a href="#about-me">About Me</a></li>
       <li class="nav-item"><a href="#">Skills</a></li>
       <li class="nav-item"><a href="#">Portfolio</a></li>
     </ul>
@@ -28,10 +28,12 @@ import Logo from "/logo.svg"
   left: 0;
   background-color: var(--primary-color);
   box-shadow: var(--box-shadow);
+  z-index: 100;
+  height: var(--nav-height);
 }
 
 .nav-bar ul {
-  height: 5rem;
+  height: 100%;
   margin: 0;
   padding: 0 4rem;
   display: flex;

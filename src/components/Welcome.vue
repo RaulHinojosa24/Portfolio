@@ -1,9 +1,9 @@
 <script setup>
-
+import MainSection from './UI/MainSection.vue';
 </script>
 
 <template>
-  <section class="welcome" id="welcome">
+  <MainSection class="welcome" id="welcome">
     <div class="content">
       <h1>&lt;HelloWorld /&gt;</h1>
       <p>
@@ -13,7 +13,7 @@
         <b>Raul, the human</b>: what are my hobbies, passions and interests.
       </p>
     </div>
-  </section>
+  </MainSection>
 </template>
 
 <style scoped>
