@@ -54,8 +54,22 @@ import MainSection from './UI/MainSection.vue';
   position: absolute;
   top: 0;
   translate: 0 -50%;
-  width: fit-content;
+  font-family: 'Cascadia Code', Consolas, 'Courier New', monospace;
 }
+
+.welcome .content h1::after {
+  content: "|";
+  font-weight: 300;
+  color: rgb(174, 175, 173);
+  animation: type-blink 1.5s steps(1) infinite;
+}
+
+@keyframes type-blink {
+  50% {
+    color: transparent;
+  }
+}
+
 
 .welcome .content p .first-row {
   display: block;
