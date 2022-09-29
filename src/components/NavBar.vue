@@ -1,17 +1,23 @@
 <script setup>
 import Logo from "/logo.svg"
+import ThemeToggler from "./ThemeToggler.vue";
 </script>
 
 <template>
   <nav class="nav-bar">
     <ul>
       <div class="left-side">
-        <li class="nav-item"><img :src="Logo" alt="" class="logo"></li>
+        <li class="nav-item">
+          <a href="#">
+            <img :src="Logo" alt="" class="logo">
+          </a>
+        </li>
         <div class="name-developer">
           <span class="name">Raul Hinojosa Perez</span>
           <span class="developer">Full Stack Web Developer</span>
         </div>
       </div>
+      <ThemeToggler />
       <li class="nav-item"><a href="#welcome">Welcome</a></li>
       <li class="nav-item"><a href="#about-me">About Me</a></li>
       <li class="nav-item"><a href="#">Skills</a></li>
@@ -42,13 +48,14 @@ import Logo from "/logo.svg"
   gap: 1rem;
 }
 
-.nav-bar li a {
+.nav-bar>ul>li a {
   color: var(--accent-color);
   transition: box-shadow 0.3s, color 0.3s;
   padding: 0.5rem 1rem;
+  font-weight: 600;
 }
 
-.nav-bar li a:hover {
+.nav-bar>ul>li a:hover {
   box-shadow: inset 0 -50px 0 0 var(--accent-color);
   color: white;
 }

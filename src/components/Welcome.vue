@@ -4,29 +4,58 @@ import MainSection from './UI/MainSection.vue';
 
 <template>
   <MainSection class="welcome" id="welcome">
-    <div class="content">
+    <!-- <div class="content">
       <h1>&lt;HelloWorld /&gt;</h1>
+      <h1>Hi, I'm Raul</h1>
       <p>
         <span class="first-row">
           Hi! Welcome to my personal webpage 👋. </span>Here you'll be able to know <b>Raul, the web developer</b>: what
         are my skills and the projects I've been into. And also
         <b>Raul, the human</b>: what are my hobbies, passions and interests.
       </p>
-    </div>
+    </div> -->
+
+    <p class="sentence">Hi,</p>
+    <p class="sentence">I'm Raul,</p>
+    <p class="sentence">web developer.</p>
+
   </MainSection>
 </template>
 
 <style scoped>
 .welcome {
   height: 100vh;
-  padding: 1em 3rem;
-  padding-top: 6rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
   background: url("Welcome.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: right;
   background-repeat: no-repeat;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.sentence {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-size: clamp(1rem, 8vw, 5rem);
+
+  box-shadow: -5px -5px var(--secondary-color);
+  transition: box-shadow .5s;
+
+  font-weight: bold;
+  padding: .5rem 1rem;
+}
+
+.dark .sentence {
+  box-shadow: 5px 5px var(--secondary-color);
+}
+
+.sentence:last-of-type {
+  color: var(--accent-color);
 }
 
 .welcome .content {
@@ -69,7 +98,6 @@ import MainSection from './UI/MainSection.vue';
     color: transparent;
   }
 }
-
 
 .welcome .content p .first-row {
   display: block;

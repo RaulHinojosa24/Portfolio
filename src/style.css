@@ -1,10 +1,22 @@
 :root {
-  --primary-color: #fff;
-  --secondary-color: #222;
-  --accent-color: #007acc;
+  --white: rgb(255, 255, 255);
+  --black: #222;
+  --blue: #007acc;
 
+  --layout-color: var(--white);
+  --background-color: var(--white);
+  --accent-color: var(--blue);
   --font-color: #000;
-  --background-color: #fff;
+  --nav-color: var(--white);
+  --link-color: var(--blue);
+
+  /* Theme toggler variables */
+  --toggle-bg-color: var(--black);
+  --toggler-color: var(--white);
+  --toggle-size: 4rem;
+
+  --primary-color: var(--white);
+  --secondary-color: var(--black);
 
   --box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 
@@ -16,11 +28,11 @@
 }
 
 .dark {
-  --primary-color: #222;
-  --secondary-color: #fff;
+  --primary-color: var(--black);
+  --secondary-color: var(--white);
 
-  --background-color: #222;
-  --font-color: #fff;
+  --background-color: var(--black);
+  --font-color: var(--white);
 }
 
 * {
