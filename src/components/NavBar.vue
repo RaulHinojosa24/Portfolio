@@ -17,7 +17,7 @@ import ThemeToggler from "./ThemeToggler.vue";
           <span class="developer">Full Stack Web Developer</span>
         </div>
       </div>
-      <ThemeToggler />
+      <!-- <ThemeToggler /> -->
       <li class="nav-item"><a href="#welcome">Welcome</a></li>
       <li class="nav-item"><a href="#about-me">About Me</a></li>
       <li class="nav-item"><a href="#">Skills</a></li>
@@ -41,11 +41,11 @@ import ThemeToggler from "./ThemeToggler.vue";
 .nav-bar ul {
   height: 100%;
   margin: 0;
-  padding: 0 4rem;
+  padding: 0 5%;
   display: flex;
   list-style: none;
   align-items: center;
-  gap: 1rem;
+  gap: .5vw;
 }
 
 .nav-bar>ul>li a {
