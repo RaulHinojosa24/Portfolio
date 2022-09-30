@@ -21,8 +21,8 @@ import ThemeToggler from "./ThemeToggler.vue";
       <!-- <li class="nav-item"><a href="#welcome">Welcome</a></li> -->
       <li class="nav-item"><a href="#about-me">About Me</a></li>
       <li class="nav-item"><a href="#skills">Skills</a></li>
-      <li class="nav-item"><a href="#">Portfolio</a></li>
-      <li class="nav-item"><a href="#">Contact</a></li>
+      <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
+      <li class="nav-item"><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 </template>
