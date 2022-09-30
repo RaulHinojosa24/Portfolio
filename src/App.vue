@@ -2,6 +2,7 @@
 import NavBar from './components/NavBar.vue';
 import Welcome from './components/Welcome.vue';
 import AboutMe from './components/AboutMe.vue';
+import Skills from './components/Skills.vue';
 </script>
 
 <template>
@@ -11,6 +12,7 @@ import AboutMe from './components/AboutMe.vue';
   <main>
     <Welcome />
     <AboutMe />
+    <Skills />
   </main>
 </template>
 

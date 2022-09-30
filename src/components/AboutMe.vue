@@ -10,15 +10,15 @@ import AboutMe from "/AboutMe.jpg"
         <h2 class="title">About me</h2>
         <div class="description">
           <p>
-            Hello! My name is Raul and I enjoy creating things that challenge me to think hard and learn new things. My
-            interest in web development started a few years ago, when I discovered that Chrome had something called
+            Hello! My name is Raul and I enjoy creating things that challenge me to think hard and learn new things. I'm
+            quietly confident, resolutive, naturally curious and I will always try to help the rest of the team as
+            much as I can.
+          </p>
+          <p>
+            My interest in web development started a few years ago, when I discovered that Chrome had something called
             "developer tools"... I was like WHAT IS THAT?!, so like any curious person, I dove in and well, it got me
             for
             good.
-          </p>
-          <p>
-            I'm quietly confident, resolutive, naturally curious and I will always try to help the rest of the team as
-            much as I can.
           </p>
           <p>
             I love being in the nature, I like to do any kind of sport (especially volleyball and climbing). I
@@ -81,14 +81,15 @@ import AboutMe from "/AboutMe.jpg"
 
 .image {
   display: flex;
-  justify-content: center;
-  margin: 1rem;
+  margin: 0 auto;
   position: relative;
+  max-width: 350px;
 }
 
 .image img {
   object-fit: cover;
   width: 100%;
+  z-index: 5;
 }
 
 .image::after {
@@ -96,7 +97,7 @@ import AboutMe from "/AboutMe.jpg"
   position: absolute;
   top: .5rem;
   left: .5rem;
-  z-index: -10;
+  z-index: 2;
   border: 2px solid rgb(0, 0, 0, .5);
   width: 100%;
   height: 100%;

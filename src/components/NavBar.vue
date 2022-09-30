@@ -20,8 +20,9 @@ import ThemeToggler from "./ThemeToggler.vue";
       <!-- <ThemeToggler /> -->
       <!-- <li class="nav-item"><a href="#welcome">Welcome</a></li> -->
       <li class="nav-item"><a href="#about-me">About Me</a></li>
-      <li class="nav-item"><a href="#">Skills</a></li>
+      <li class="nav-item"><a href="#skills">Skills</a></li>
       <li class="nav-item"><a href="#">Portfolio</a></li>
+      <li class="nav-item"><a href="#">Contact</a></li>
     </ul>
   </nav>
 </template>
@@ -32,7 +33,8 @@ import ThemeToggler from "./ThemeToggler.vue";
   position: fixed;
   top: 0;
   left: 0;
-  background-color: var(--primary-color);
+  background-color: rgba(255, 255, 255, .9);
+  backdrop-filter: blur(20px);
   box-shadow: var(--box-shadow);
   z-index: 100;
   height: var(--nav-height);
